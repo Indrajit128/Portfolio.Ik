@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html" class="active">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="contact.html">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="hero" class="hero-section">
+      <h1 class="hero-title">Hi, I'm <span class="animated-text">Indrajit Kshirsagar</span></h1>
+      <p class="hero-subtitle">Research and Development</p>
+    </section>
+
+    <section id="about" class="about-section">
+      <h2>About Me</h2>
+      <p>I am Indrajit Kshirsagar, a passionate Research and Development professional with expertise in web development, software engineering, and innovative technology solutions. I specialize in creating responsive, user-friendly web applications and have a strong foundation in front-end and back-end technologies.</p>
+      <p>With a commitment to continuous learning and problem-solving, I strive to deliver high-quality projects that make a positive impact.</p>
+    </section>
+
+    <section id="resume" class="resume-section">
+      <h2>Resume</h2>
+      <div class="resume-preview">
+        <svg class="resume-icon" xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 24 24" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" width="48" height="48" aria-label="Resume Icon" role="img">
+          <path d="M14 2H6a2 2 0 0 0-2 2v16a2 2 0 0 0 2 2h12a2 2 0 0 0 2-2V8z"/>
+          <polyline points="14 2 14 8 20 8"/>
+          <line x1="16" y1="13" x2="8" y2="13"/>
+          <line x1="16" y1="17" x2="8" y2="17"/>
+          <line x1="10" y1="9" x2="9" y2="9"/>
+        </svg>
+        <div class="resume-actions">
+          <a href="Indrajit_Kshirsagar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="btn-view">👁️ View Resume</a>
+          <a href="Indrajit_Kshirsagar_Resume.pdf" download class="btn-download">⬇️ Download Resume</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="skills">
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/html5.svg" alt="HTML5" width="40" height="40" />
+        <span>HTML5</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/css3.svg" alt="CSS3" width="40" height="40" />
+        <span>CSS3</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/javascript.svg" alt="JavaScript" width="40" height="40" />
+        <span>JavaScript</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/react.svg" alt="React" width="40" height="40" />
+        <span>React</span>
+      </div>
+      <div class="skill">
+        <img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/node-dot-js.svg" alt="Node.js" width="40" height="40" />
+        <span>Node.js</span>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Indrajit Kshirsagar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>

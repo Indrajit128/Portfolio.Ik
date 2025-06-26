@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Contact - My Portfolio</title>
+  <link rel="stylesheet" href="style.css" />
+  <link rel="icon" href="assets/icons/favicon.ico" />
+</head>
+<body>
+  <header>
+    <nav class="navbar">
+      <div class="logo">MyPortfolio</div>
+      <ul class="nav-links">
+        <li><a href="index.html">About</a></li>
+        <li><a href="projects.html">Projects</a></li>
+        <li><a href="/Indrajit_Kshirsagar_Resume.pdf" target="_blank" rel="noopener noreferrer" class="nav-resume-link">Resume</a></li>
+        <li><a href="contact.html" class="active">Contact</a></li>
+      </ul>
+      <div class="hamburger">
+        <span></span>
+        <span></span>
+        <span></span>
+      </div>
+      <button id="theme-toggle" aria-label="Toggle Dark/Light Mode">🌙</button>
+    </nav>
+  </header>
+
+  <main>
+    <section id="contact" class="contact-section">
+      <h2>Contact Me</h2>
+      <form id="contact-form" novalidate>
+        <div class="form-group">
+          <input type="text" id="name" name="name" required />
+          <label for="name">Name</label>
+        </div>
+        <div class="form-group">
+          <input type="email" id="email" name="email" required />
+          <label for="email">Email</label>
+        </div>
+        <div class="form-group">
+          <textarea id="message" name="message" rows="4" required></textarea>
+          <label for="message">Message</label>
+        </div>
+        <button type="submit">Send</button>
+      </form>
+      <div class="social-links">
+        <a href="https://www.linkedin.com/in/indrajit-kshirsagar-869430257" aria-label="LinkedIn" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/linkedin.svg" alt="LinkedIn" width="24" height="24" /></a>
+        <a href="https://github.com/Indrajit128" aria-label="GitHub" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/github.svg" alt="GitHub" width="24" height="24" /></a>
+        <a href="#" aria-label="Twitter" target="_blank" rel="noopener"><img src="https://cdn.jsdelivr.net/npm/simple-icons@v9/icons/twitter.svg" alt="Twitter" width="24" height="24" /></a>
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <p>© 2024 Indrajit Kshirsagar. All rights reserved.</p>
+  </footer>
+
+  <script src="script.js"></script>
+</body>
+</html>
