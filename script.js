@@ -63,8 +63,28 @@ document.addEventListener('DOMContentLoaded', () => {
         alert('Please enter a valid email address.');
         return;
       }
-      alert('Thank you for your message!');
-      contactForm.reset();
+      // Send form data to backend
+      fetch('http://localhost:3001/contact', {
+        method: 'POST',
+        headers: {
+          'Content-Type': 'application/json'
+        },
+        body: JSON.stringify({ name, email, message })
+      })
+      .then(response => {
+        if (!response.ok) {
+          throw new Error('Network response was not ok');
+        }
+        return response.json();
+      })
+      .then(data => {
+        alert('Thank you for your message!');
+        contactForm.reset();
+      })
+      .catch(error => {
+        alert('There was a problem submitting your message. Please try again later.');
+        console.error('Error:', error);
+      });
     });
   }
 
